@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #172B4D;
+    --color-ivory: #F5F1E8;
+    --color-gold: #B69A62;
+    --color-gold-hover: #9c824e;
+    --color-navy-light: #223b63;
+    --color-ivory-surface: #FAF7F0;
+    --color-ivory-card: #FFFFFF;
+    --color-border-subtle: rgba(23, 43, 77, 0.08);
+    --color-border-gold: rgba(182, 154, 98, 0.35);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-ivory);
+    color: var(--color-navy);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  ::selection {
+    background-color: #B69A62;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom Typography Helpers */
+.font-display {
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.font-serif-subtle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Color utility aliases */
+.bg-navy { background-color: #172B4D; }
+.text-navy { color: #172B4D; }
+.border-navy { border-color: #172B4D; }
+
+.bg-ivory { background-color: #F5F1E8; }
+.bg-ivory-surface { background-color: #FAF7F0; }
+.text-ivory { color: #F5F1E8; }
+
+.bg-gold { background-color: #B69A62; }
+.text-gold { color: #B69A62; }
+.border-gold { border-color: #B69A62; }
+
+/* Subdued borders & transitions */
+.border-gold-subtle { border-color: rgba(182, 154, 98, 0.25); }
+.border-navy-subtle { border-color: rgba(23, 43, 77, 0.1); }
+.bg-gold-subtle { background-color: rgba(182, 154, 98, 0.08); }
+.bg-navy-subtle { background-color: rgba(23, 43, 77, 0.04); }
+
+/* Focus and accessibility styles */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #B69A62;
+  outline-offset: 2px;
+}

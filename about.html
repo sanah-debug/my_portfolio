@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Sana Hasan - Academic Journey &amp; Engineering Focus</title>
+    <meta name="description" content="Learn about Sana Hasan, an Information Management undergraduate at Birgunj Public College (Tribhuvan University) and Junior Developer Intern at Octatribe." />
+    
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="About Sana Hasan | Aspiring Full-Stack Developer" />
+    <meta property="og:description" content="Academic background, semester GPA breakdown, career direction, and development philosophy of Sana Hasan." />
+    <meta property="og:image" content="/src/assets/images/sana_hasan_editorial_1793599899261.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#F5F1E8] text-[#172B4D] antialiased selection:bg-[#B69A62] selection:text-white flex flex-col min-h-screen">
+    
+    <!-- TOP NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-[#F5F1E8]/95 backdrop-blur-md border-b border-[#172B4D]/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-8">
+          
+          <a href="index.html" class="flex items-baseline gap-2 group whitespace-nowrap shrink-0">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-[#172B4D] group-hover:text-[#B69A62] transition-colors">
+              SANA HASAN
+            </span>
+            <span class="text-[#B69A62] font-serif text-lg leading-none">.</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[#172B4D]/80">
+            <a href="index.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Home</a>
+            <a href="about.html" class="text-[#172B4D] font-semibold border-b-2 border-[#B69A62] pb-0.5 whitespace-nowrap transition-colors">About</a>
+            <a href="skills.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Skills</a>
+            <a href="projects.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Projects</a>
+            <a href="experience.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Experience</a>
+            <a href="certifications.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Certifications</a>
+            <a href="contact.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="contact.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] border border-[#172B4D] transition-colors rounded-sm shadow-xs">
+              Get In Touch
+            </a>
+            
+            <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-sm text-[#172B4D] hover:bg-[#172B4D]/5 transition-colors focus:outline-none">
+              <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#F5F1E8] border-b border-[#172B4D]/10 px-4 pt-3 pb-6 transition-all duration-200">
+        <div class="flex flex-col space-y-3 text-base font-medium text-[#172B4D]">
+          <a href="index.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Home</a>
+          <a href="about.html" class="py-2.5 px-3 rounded-sm bg-[#172B4D]/5 text-[#172B4D] font-semibold flex items-center justify-between">
+            <span>About</span>
+            <span class="text-xs text-[#B69A62]">Current</span>
+          </a>
+          <a href="skills.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Skills</a>
+          <a href="projects.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Projects</a>
+          <a href="experience.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Experience</a>
+          <a href="certifications.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Certifications</a>
+          <a href="contact.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Contact</a>
+          <div class="pt-2">
+            <a href="contact.html" class="w-full inline-flex items-center justify-center px-4 py-3 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm text-center">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+      
+      <!-- PAGE HEADER -->
+      <section class="py-12 sm:py-16 border-b border-[#172B4D]/10 bg-[#FAF7F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">
+              <span>Biography &amp; Academics</span>
+              <span aria-hidden="true">·</span>
+              <span>Personal Narrative</span>
+            </div>
+            <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-[#172B4D] tracking-tight">
+              About Me
+            </h1>
+            <p class="mt-4 text-base sm:text-lg text-[#172B4D]/80 leading-relaxed">
+              An undergraduate in Information Management passionate about the intersection of elegant code, thoughtful interfaces, and practical software solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PERSONAL INTRODUCTION & PROFILE -->
+      <section class="py-14 sm:py-20 border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Left Portrait & Fast Facts -->
+            <div class="lg:col-span-5 space-y-6">
+              <div class="bg-white border border-[#172B4D]/10 rounded-sm p-4 sm:p-5">
+                <div class="aspect-square rounded-xs overflow-hidden mb-5 bg-[#FAF7F0]">
+                  <img 
+                    src="/src/assets/images/sana_hasan_editorial_1793599899261.jpg" 
+                    alt="Sana Hasan portrait" 
+                    class="w-full h-full object-cover object-top"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="border-t border-[#172B4D]/10 pt-4 space-y-2.5 text-xs sm:text-sm">
+                  <div class="flex justify-between">
+                    <span class="text-[#172B4D]/60 font-mono">Location</span>
+                    <span class="font-medium text-[#172B4D]">Birgunj, Nepal</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-[#172B4D]/60 font-mono">Degree</span>
+                    <span class="font-medium text-[#172B4D]">Bachelor of Information Mgmt (BIM)</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-[#172B4D]/60 font-mono">Institution</span>
+                    <span class="font-medium text-[#172B4D]">Birgunj Public College</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-[#172B4D]/60 font-mono">Affiliation</span>
+                    <span class="font-medium text-[#172B4D]">Tribhuvan University</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-[#172B4D]/60 font-mono">Expected Graduation</span>
+                    <span class="font-medium text-[#B69A62] font-semibold">2027</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-[#172B4D]/60 font-mono">Current Workplace</span>
+                    <span class="font-medium text-[#172B4D]">Octatribe (Junior Dev Intern)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick action banner -->
+              <div class="p-5 bg-[#172B4D] text-[#F5F1E8] rounded-sm">
+                <p class="font-display text-base font-semibold mb-2">Connect Directly</p>
+                <p class="text-xs text-[#F5F1E8]/75 mb-4 leading-relaxed">
+                  Have questions about my academic work, internship experience, or tech stack?
+                </p>
+                <a href="mailto:hasansana998@gmail.com" class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-[#B69A62] hover:text-white transition-colors">
+                  hasansana998@gmail.com &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Narrative -->
+            <div class="lg:col-span-7 space-y-8">
+              <div>
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] tracking-tight mb-4">
+                  Engineering Growth &amp; Real-World Curiosity
+                </h2>
+                <div class="space-y-4 text-base text-[#172B4D]/80 leading-relaxed">
+                  <p>
+                    My name is <strong>Sana Hasan</strong>. I am an aspiring full-stack developer currently pursuing my undergraduate degree in Information Management at Birgunj Public College, affiliated with Tribhuvan University.
+                  </p>
+                  <p>
+                    I am driven by the belief that software should be genuinely useful, clearly structured, and pleasant to interact with. As a growing developer, I thrive on taking abstract concepts from lecture halls and self-directed coursework into practical production software.
+                  </p>
+                  <p>
+                    Presently, I serve as a <strong>Junior Developer Intern at Octatribe</strong>, where I collaborate directly with the founder on core products including <em>WACRM</em> (a customer relationship management product), <em>ERPClaw</em>, and <em>SeldonFrame</em>. This hands-on experience has deepened my appreciation for code quality, agile teamwork, and user-centric problem solving.
+                  </p>
+                </div>
+              </div>
+
+              <!-- What I Enjoy Building and Learning -->
+              <div class="p-6 sm:p-8 bg-[#FAF7F0] border border-[#172B4D]/10 rounded-sm">
+                <h3 class="font-display text-xl font-bold text-[#172B4D] mb-4">
+                  What I Enjoy Building &amp; Learning
+                </h3>
+                <ul class="space-y-3.5 text-sm sm:text-base text-[#172B4D]/80">
+                  <li class="flex items-start gap-3">
+                    <span class="text-[#B69A62] font-bold text-lg leading-none mt-0.5">&#x2014;</span>
+                    <div>
+                      <strong class="text-[#172B4D]">Accessible Full-Stack Applications:</strong> Architecting applications where frontend responsiveness is tightly coupled with dependable backend logic and clean database design.
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-[#B69A62] font-bold text-lg leading-none mt-0.5">&#x2014;</span>
+                    <div>
+                      <strong class="text-[#172B4D]">Cross-Platform Mobile Experiences:</strong> Crafting native-feeling apps in React Native and prototyping clean UI wireframes in Figma before touching code.
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-[#B69A62] font-bold text-lg leading-none mt-0.5">&#x2014;</span>
+                    <div>
+                      <strong class="text-[#172B4D]">Practical Artificial Intelligence:</strong> Exploring how Machine Learning, NLP, and Generative AI can automate manual workflows, enhance search, and bring intelligence to everyday tools.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Contextual jump -->
+              <div class="pt-2 flex flex-wrap gap-4">
+                <a href="skills.html" class="inline-flex items-center justify-center px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm shadow-xs">
+                  Explore My Skills &rarr;
+                </a>
+                <a href="projects.html" class="inline-flex items-center justify-center px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[#172B4D] bg-white border border-[#172B4D]/20 hover:border-[#B69A62] transition-colors rounded-sm">
+                  View Featured Projects
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ACADEMIC PERFORMANCE & SEMESTER GPAS -->
+      <section class="py-14 sm:py-20 bg-[#FAF7F0] border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="max-w-3xl mb-12">
+            <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-2">
+              <span>Academic Distinction</span>
+              <span aria-hidden="true">·</span>
+              <span>Verified Transcript Data</span>
+            </div>
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#172B4D] tracking-tight">
+              Education &amp; Academic Record
+            </h2>
+            <p class="mt-2 text-sm sm:text-base text-[#172B4D]/75">
+              Bachelor of Information Management (BIM) at Birgunj Public College, affiliated with Tribhuvan University. Consistently maintaining academic excellence across all completed semesters.
+            </p>
+          </div>
+
+          <!-- Academic Overview Card -->
+          <div class="bg-white border border-[#172B4D]/10 rounded-sm p-6 sm:p-8 mb-8">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-[#172B4D]/10 gap-4">
+              <div>
+                <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">Undergraduate Degree</span>
+                <h3 class="font-display text-xl sm:text-2xl font-bold text-[#172B4D]">
+                  Bachelor of Information Management (BIM)
+                </h3>
+                <p class="text-sm text-[#172B4D]/70 mt-1">
+                  Birgunj Public College · Affiliated with Tribhuvan University, Nepal
+                </p>
+              </div>
+              <div class="text-left sm:text-right">
+                <span class="text-xs font-mono text-[#172B4D]/60 block">Expected Graduation</span>
+                <span class="font-display text-2xl font-bold text-[#172B4D]">2027</span>
+              </div>
+            </div>
+
+            <!-- GPA Table / Cards -->
+            <div class="mt-6">
+              <h4 class="text-xs font-mono uppercase tracking-wider text-[#172B4D]/70 mb-4">
+                Semester-by-Semester GPA Record
+              </h4>
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+                
+                <!-- Sem 1 -->
+                <div class="p-4 bg-[#FAF7F0] border border-[#172B4D]/10 rounded-sm text-center hover:border-[#B69A62] transition-colors">
+                  <span class="text-xs font-mono text-[#172B4D]/60 block mb-1">Semester 1</span>
+                  <span class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] tabular-nums">3.74</span>
+                  <span class="block text-[11px] text-[#B69A62] font-mono mt-1">GPA / 4.0</span>
+                </div>
+
+                <!-- Sem 2 -->
+                <div class="p-4 bg-[#FAF7F0] border border-[#172B4D]/10 rounded-sm text-center hover:border-[#B69A62] transition-colors">
+                  <span class="text-xs font-mono text-[#172B4D]/60 block mb-1">Semester 2</span>
+                  <span class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] tabular-nums">3.79</span>
+                  <span class="block text-[11px] text-[#B69A62] font-mono mt-1">GPA / 4.0</span>
+                </div>
+
+                <!-- Sem 3 -->
+                <div class="p-4 bg-[#FAF7F0] border border-[#172B4D]/10 rounded-sm text-center hover:border-[#B69A62] transition-colors">
+                  <span class="text-xs font-mono text-[#172B4D]/60 block mb-1">Semester 3</span>
+                  <span class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] tabular-nums">3.83</span>
+                  <span class="block text-[11px] text-[#B69A62] font-mono mt-1">GPA / 4.0</span>
+                </div>
+
+                <!-- Sem 4 -->
+                <div class="p-4 bg-[#FAF7F0] border border-[#172B4D]/10 rounded-sm text-center hover:border-[#B69A62] transition-colors">
+                  <span class="text-xs font-mono text-[#172B4D]/60 block mb-1">Semester 4</span>
+                  <span class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] tabular-nums">3.77</span>
+                  <span class="block text-[11px] text-[#B69A62] font-mono mt-1">GPA / 4.0</span>
+                </div>
+
+                <!-- Sem 5 -->
+                <div class="p-4 bg-[#FAF7F0] border border-[#B69A62] rounded-sm text-center bg-gradient-to-b from-white to-[#FAF7F0]">
+                  <span class="text-xs font-mono text-[#B69A62] font-semibold block mb-1">Semester 5</span>
+                  <span class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] tabular-nums">3.86</span>
+                  <span class="block text-[11px] text-[#B69A62] font-mono mt-1 font-semibold">Latest Record</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Notes -->
+            <p class="text-xs text-[#172B4D]/60 mt-6 pt-4 border-t border-[#172B4D]/10 italic">
+              * Official cumulative academic performance in the Bachelor of Information Management curriculum, Tribhuvan University.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PROFESSIONAL TIMELINE -->
+      <section class="py-14 sm:py-20 border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mb-12">
+            <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-2">
+              <span>Milestones</span>
+              <span aria-hidden="true">·</span>
+              <span>Chronology</span>
+            </div>
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#172B4D] tracking-tight">
+              Development Timeline
+            </h2>
+          </div>
+
+          <div class="relative border-l border-[#B69A62]/40 ml-3 sm:ml-6 pl-6 sm:pl-10 space-y-10">
+            
+            <!-- Item 1: Expected 2027 -->
+            <div class="relative">
+              <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#B69A62] border-4 border-[#F5F1E8]"></span>
+              <div class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-1">2027 (Projected)</div>
+              <h3 class="font-display text-lg font-bold text-[#172B4D]">Graduation: Bachelor of Information Management</h3>
+              <p class="text-sm text-[#172B4D]/75 mt-1">
+                Completion of degree requirements at Birgunj Public College, affiliated with Tribhuvan University.
+              </p>
+            </div>
+
+            <!-- Item 2: Oct 2026 -->
+            <div class="relative">
+              <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#172B4D] border-4 border-[#F5F1E8]"></span>
+              <div class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-1">October 2026 – Present</div>
+              <h3 class="font-display text-lg font-bold text-[#172B4D]">Junior Developer Intern · Octatribe</h3>
+              <p class="text-sm text-[#172B4D]/75 mt-1">
+                Joined Octatribe to develop WACRM (Customer Relationship Management) and collaborate directly with the founder on ERPClaw and SeldonFrame initiatives.
+              </p>
+            </div>
+
+            <!-- Item 3: Sep 2026 -->
+            <div class="relative">
+              <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#172B4D] border-4 border-[#F5F1E8]"></span>
+              <div class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-1">September 2026</div>
+              <h3 class="font-display text-lg font-bold text-[#172B4D]">Cloud &amp; Generative AI Certifications</h3>
+              <p class="text-sm text-[#172B4D]/75 mt-1">
+                Completed Google Cloud AI and Generative AI Studio courses, establishing foundational architecture and prompt engineering knowledge.
+              </p>
+            </div>
+
+            <!-- Item 4: Apr 2026 -->
+            <div class="relative">
+              <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#172B4D] border-4 border-[#F5F1E8]"></span>
+              <div class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-1">April 2026</div>
+              <h3 class="font-display text-lg font-bold text-[#172B4D]">Fullstack JavaScript Pre-Bootcamp (72 Hours)</h3>
+              <p class="text-sm text-[#172B4D]/75 mt-1">
+                Intensive 72-hour engineering program conducted by Karkhana Samuha &amp; TEJ Center under the BRIDGE Project, mastering core JavaScript and modern web workflows.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Bottom contextual link -->
+          <div class="mt-14 pt-8 border-t border-[#172B4D]/10 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <p class="text-xs font-mono text-[#B69A62] uppercase tracking-wider mb-1">Next Section</p>
+              <h4 class="font-display text-lg font-bold text-[#172B4D]">Want to examine my technical skillset?</h4>
+            </div>
+            <a href="skills.html" class="inline-flex items-center justify-center px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm shadow-xs">
+              Explore Skills &rarr;
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#172B4D] text-[#F5F1E8] pt-12 pb-8 border-t border-[#B69A62]/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-[#F5F1E8]/10">
+          <div class="md:col-span-5">
+            <a href="index.html" class="font-display text-xl font-bold tracking-tight text-white block mb-2">
+              SANA HASAN<span class="text-[#B69A62]">.</span>
+            </a>
+            <p class="text-sm text-[#F5F1E8]/75 leading-relaxed max-w-sm mb-4">
+              Aspiring Full-Stack Developer &amp; Information Management undergraduate at Birgunj Public College, affiliated with Tribhuvan University.
+            </p>
+            <div class="text-xs text-[#B69A62] font-mono">Birgunj, Nepal · Class of 2027</div>
+          </div>
+
+          <div class="md:col-span-4">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Navigation</p>
+            <ul class="grid grid-cols-2 gap-2 text-sm text-[#F5F1E8]/80">
+              <li><a href="index.html" class="hover:text-[#B69A62] transition-colors">Home</a></li>
+              <li><a href="about.html" class="hover:text-[#B69A62] transition-colors font-semibold text-white">About</a></li>
+              <li><a href="skills.html" class="hover:text-[#B69A62] transition-colors">Skills</a></li>
+              <li><a href="projects.html" class="hover:text-[#B69A62] transition-colors">Projects</a></li>
+              <li><a href="experience.html" class="hover:text-[#B69A62] transition-colors">Experience</a></li>
+              <li><a href="certifications.html" class="hover:text-[#B69A62] transition-colors">Certifications</a></li>
+              <li><a href="contact.html" class="hover:text-[#B69A62] transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Contact</p>
+            <div class="space-y-2 text-sm text-[#F5F1E8]/80">
+              <div><a href="mailto:hasansana998@gmail.com" class="hover:text-[#B69A62] transition-colors">hasansana998@gmail.com</a></div>
+              <div><a href="https://github.com/sanah-debug" target="_blank" rel="noopener noreferrer" class="hover:text-[#B69A62] transition-colors">github.com/sanah-debug</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#F5F1E8]/60 gap-4">
+          <p>&copy; 2026 Sana Hasan. All rights reserved.</p>
+          <a href="index.html" class="font-mono text-[#B69A62] hover:underline">&larr; Return to Home</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects &amp; Case Studies | Sana Hasan - Software Works</title>
+    <meta name="description" content="Explore featured engineering projects by Sana Hasan: BookAHand (React Native home-service marketplace) and Redify (WordPress bookstore)." />
+    
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects Portfolio | Sana Hasan" />
+    <meta property="og:description" content="Real projects built by Sana Hasan, including BookAHand mobile application and Redify bookstore." />
+    <meta property="og:image" content="/src/assets/images/project_bookahand_mockup_1793599900687.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#F5F1E8] text-[#172B4D] antialiased selection:bg-[#B69A62] selection:text-white flex flex-col min-h-screen">
+    
+    <!-- TOP NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-[#F5F1E8]/95 backdrop-blur-md border-b border-[#172B4D]/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-8">
+          
+          <a href="index.html" class="flex items-baseline gap-2 group whitespace-nowrap shrink-0">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-[#172B4D] group-hover:text-[#B69A62] transition-colors">
+              SANA HASAN
+            </span>
+            <span class="text-[#B69A62] font-serif text-lg leading-none">.</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[#172B4D]/80">
+            <a href="index.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Home</a>
+            <a href="about.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">About</a>
+            <a href="skills.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Skills</a>
+            <a href="projects.html" class="text-[#172B4D] font-semibold border-b-2 border-[#B69A62] pb-0.5 whitespace-nowrap transition-colors">Projects</a>
+            <a href="experience.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Experience</a>
+            <a href="certifications.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Certifications</a>
+            <a href="contact.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="contact.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] border border-[#172B4D] transition-colors rounded-sm shadow-xs">
+              Get In Touch
+            </a>
+            
+            <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-sm text-[#172B4D] hover:bg-[#172B4D]/5 transition-colors focus:outline-none">
+              <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#F5F1E8] border-b border-[#172B4D]/10 px-4 pt-3 pb-6 transition-all duration-200">
+        <div class="flex flex-col space-y-3 text-base font-medium text-[#172B4D]">
+          <a href="index.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Home</a>
+          <a href="about.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">About</a>
+          <a href="skills.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Skills</a>
+          <a href="projects.html" class="py-2.5 px-3 rounded-sm bg-[#172B4D]/5 text-[#172B4D] font-semibold flex items-center justify-between">
+            <span>Projects</span>
+            <span class="text-xs text-[#B69A62]">Current</span>
+          </a>
+          <a href="experience.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Experience</a>
+          <a href="certifications.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Certifications</a>
+          <a href="contact.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Contact</a>
+          <div class="pt-2">
+            <a href="contact.html" class="w-full inline-flex items-center justify-center px-4 py-3 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm text-center">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+      
+      <!-- PAGE HEADER -->
+      <section class="py-12 sm:py-16 border-b border-[#172B4D]/10 bg-[#FAF7F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">
+              <span>Applied Works</span>
+              <span aria-hidden="true">·</span>
+              <span>Software Showcases</span>
+            </div>
+            <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-[#172B4D] tracking-tight">
+              Selected Projects
+            </h1>
+            <p class="mt-4 text-base sm:text-lg text-[#172B4D]/80 leading-relaxed">
+              Detailed breakdown of software solutions, architectural approaches, and technical contributions. Each entry represents real development and design work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SHOWCASE LIST -->
+      <section class="py-14 sm:py-20 border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          
+          <!-- PROJECT 1: BookAHand -->
+          <article class="bg-white border border-[#172B4D]/10 rounded-sm overflow-hidden hover:border-[#B69A62] transition-colors">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+              
+              <!-- Left Visual / Mockup Preview -->
+              <div class="lg:col-span-5 bg-[#FAF7F0] border-b lg:border-b-0 lg:border-r border-[#172B4D]/10 relative p-6 sm:p-10 flex items-center justify-center">
+                <div class="relative w-full max-w-sm aspect-4/3 rounded-xs overflow-hidden shadow-xs border border-[#172B4D]/10 bg-white">
+                  <img 
+                    src="/src/assets/images/project_bookahand_mockup_1793599900687.jpg" 
+                    alt="BookAHand mobile marketplace application preview" 
+                    class="w-full h-full object-cover object-top hover:scale-102 transition-transform duration-500 cursor-pointer"
+                    data-project-trigger
+                    data-project-title="BookAHand – Home-Service Marketplace Mobile App"
+                    data-project-category="Mobile Marketplace · React Native"
+                    data-project-description="A mobile marketplace connecting people with trusted, independent home-service professionals such as plumbers, cleaners, and electricians."
+                    data-project-tags="React Native,Tailwind CSS,Figma,Google Authentication"
+                    data-project-contributions="Designed complete UI/UX in Figma, developed the mobile frontend in React Native with Tailwind styling, and integrated Google Authentication for seamless user sign-in."
+                    data-project-img="/src/assets/images/project_bookahand_mockup_1793599900687.jpg"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="absolute top-4 left-4 bg-[#172B4D] text-white text-[11px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-xs">
+                  Project 01 · In Progress
+                </div>
+              </div>
+
+              <!-- Right Content Details -->
+              <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs font-mono text-[#B69A62] mb-2 uppercase tracking-wider">
+                    <span>Mobile Application</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Service Economy</span>
+                  </div>
+                  
+                  <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] mb-4">
+                    BookAHand – Home-Service Marketplace Mobile App
+                  </h2>
+
+                  <p class="text-base text-[#172B4D]/80 leading-relaxed mb-6">
+                    BookAHand addresses the everyday friction of sourcing reliable, independent local tradespeople. It provides homeowners and renters with a trusted platform to browse vetted domestic professionals—such as certified electricians, plumbers, and cleaning technicians—with transparent booking steps.
+                  </p>
+
+                  <!-- Technical Contributions Box -->
+                  <div class="p-5 bg-[#FAF7F0] border border-[#172B4D]/10 rounded-sm mb-6 space-y-3">
+                    <h3 class="text-xs font-mono uppercase tracking-wider text-[#172B4D] font-bold">
+                      Key Engineering &amp; Design Contributions
+                    </h3>
+                    <ul class="text-xs sm:text-sm text-[#172B4D]/75 space-y-2">
+                      <li class="flex items-start gap-2.5">
+                        <span class="text-[#B69A62] font-bold">&#8226;</span>
+                        <span><strong>UI/UX Design:</strong> Conceptualized the user experience flow and interactive component library inside <em>Figma</em>, emphasizing clean visual hierarchy.</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <span class="text-[#B69A62] font-bold">&#8226;</span>
+                        <span><strong>Frontend Development:</strong> Implemented the mobile client architecture using <em>React Native</em> paired with <em>Tailwind CSS</em> for consistent cross-platform aesthetics.</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <span class="text-[#B69A62] font-bold">&#8226;</span>
+                        <span><strong>Authentication Integration:</strong> Connected <em>Google Authentication</em> for fast, trusted OAuth single sign-on.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-[#172B4D]/70 pt-4 border-t border-[#172B4D]/10">
+                    <span class="font-semibold text-[#172B4D]">Stack:</span>
+                    <span>React Native</span>
+                    <span>·</span>
+                    <span>Tailwind CSS</span>
+                    <span>·</span>
+                    <span>Figma</span>
+                    <span>·</span>
+                    <span>Google Authentication</span>
+                  </div>
+
+                  <div class="mt-6 flex flex-wrap items-center gap-3">
+                    <button 
+                      type="button" 
+                      class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm shadow-xs cursor-pointer"
+                      data-project-trigger
+                      data-project-title="BookAHand – Home-Service Marketplace Mobile App"
+                      data-project-category="Mobile Marketplace · React Native"
+                      data-project-description="A mobile marketplace connecting people with trusted, independent home-service professionals such as plumbers, cleaners, and electricians."
+                      data-project-tags="React Native,Tailwind CSS,Figma,Google Authentication"
+                      data-project-contributions="Designed complete UI/UX in Figma, developed the mobile frontend in React Native with Tailwind styling, and integrated Google Authentication for seamless user sign-in."
+                      data-project-img="/src/assets/images/project_bookahand_mockup_1793599900687.jpg"
+                    >
+                      View Full Details Modal
+                    </button>
+                    <span class="text-xs text-[#172B4D]/60 font-mono italic">
+                      In active development
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Redify -->
+          <article class="bg-white border border-[#172B4D]/10 rounded-sm overflow-hidden hover:border-[#B69A62] transition-colors">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+              
+              <!-- Left Visual / Mockup Preview -->
+              <div class="lg:col-span-5 bg-[#FAF7F0] border-b lg:border-b-0 lg:border-r border-[#172B4D]/10 relative p-6 sm:p-10 flex items-center justify-center">
+                <div class="relative w-full max-w-sm aspect-4/3 rounded-xs overflow-hidden shadow-xs border border-[#172B4D]/10 bg-white">
+                  <img 
+                    src="/src/assets/images/project_redify_mockup_1793599899533.jpg" 
+                    alt="Redify online bookstore showcase preview" 
+                    class="w-full h-full object-cover object-top hover:scale-102 transition-transform duration-500 cursor-pointer"
+                    data-project-trigger
+                    data-project-title="Redify – Online Book Store"
+                    data-project-category="E-Commerce Website · WordPress"
+                    data-project-description="An e-commerce website developed for an online bookstore using WordPress, focusing on literary categorization, reader discovery, and smooth catalog exploration."
+                    data-project-tags="WordPress,E-Commerce,Catalog Architecture,Responsive Web"
+                    data-project-contributions="Implemented end-to-end e-commerce store architecture, configured product categories and inventory structures, and customized responsive page templates."
+                    data-project-img="/src/assets/images/project_redify_mockup_1793599899533.jpg"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="absolute top-4 left-4 bg-[#FAF7F0] border border-[#172B4D]/20 text-[#172B4D] text-[11px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-xs">
+                  Project 02 · Completed
+                </div>
+              </div>
+
+              <!-- Right Content Details -->
+              <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs font-mono text-[#B69A62] mb-2 uppercase tracking-wider">
+                    <span>E-Commerce Website</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Digital Publishing</span>
+                  </div>
+                  
+                  <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] mb-4">
+                    Redify – Online Book Store
+                  </h2>
+
+                  <p class="text-base text-[#172B4D]/80 leading-relaxed mb-6">
+                    Redify was built to offer a tailored online purchasing environment for literature enthusiasts and academic readers. Built upon WordPress, the platform optimizes book discovery through intuitive genre taxonomies, rich product pages, and reader-first navigation.
+                  </p>
+
+                  <div class="p-5 bg-[#FAF7F0] border border-[#172B4D]/10 rounded-sm mb-6 space-y-3">
+                    <h3 class="text-xs font-mono uppercase tracking-wider text-[#172B4D] font-bold">
+                      Key Implementation Highlights
+                    </h3>
+                    <ul class="text-xs sm:text-sm text-[#172B4D]/75 space-y-2">
+                      <li class="flex items-start gap-2.5">
+                        <span class="text-[#B69A62] font-bold">&#8226;</span>
+                        <span><strong>Platform Setup:</strong> Engineered the entire bookstore architecture utilizing <em>WordPress</em>.</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <span class="text-[#B69A62] font-bold">&#8226;</span>
+                        <span><strong>Catalog &amp; Commerce:</strong> Configured detailed author metadata, ISBN categorization, reader reviews, and cart flows.</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <span class="text-[#B69A62] font-bold">&#8226;</span>
+                        <span><strong>Responsive Design:</strong> Styled accessible mobile-friendly templates for browsing on phones, tablets, and laptops.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-[#172B4D]/70 pt-4 border-t border-[#172B4D]/10">
+                    <span class="font-semibold text-[#172B4D]">Stack:</span>
+                    <span>WordPress</span>
+                    <span>·</span>
+                    <span>E-Commerce</span>
+                    <span>·</span>
+                    <span>PHP</span>
+                    <span>·</span>
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="mt-6 flex flex-wrap items-center gap-3">
+                    <button 
+                      type="button" 
+                      class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm shadow-xs cursor-pointer"
+                      data-project-trigger
+                      data-project-title="Redify – Online Book Store"
+                      data-project-category="E-Commerce Website · WordPress"
+                      data-project-description="An e-commerce website developed for an online bookstore using WordPress, focusing on literary categorization, reader discovery, and smooth catalog exploration."
+                      data-project-tags="WordPress,E-Commerce,Catalog Architecture,Responsive Web"
+                      data-project-contributions="Implemented end-to-end e-commerce store architecture, configured product categories and inventory structures, and customized responsive page templates."
+                      data-project-img="/src/assets/images/project_redify_mockup_1793599899533.jpg"
+                    >
+                      View Full Details Modal
+                    </button>
+                    <span class="text-xs text-[#172B4D]/60 font-mono">
+                      Completed Project
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CONTEXTUAL NAVIGATION -->
+      <section class="py-14 sm:py-20 bg-[#FAF7F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <div class="p-6 sm:p-8 bg-white border border-[#172B4D]/10 rounded-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">About the Author</span>
+                <h3 class="font-display text-xl font-bold text-[#172B4D] mb-2">
+                  Learn More About My Background
+                </h3>
+                <p class="text-sm text-[#172B4D]/75 mb-6">
+                  Read about my undergraduate education at Birgunj Public College, semester GPAs, and development journey.
+                </p>
+              </div>
+              <div>
+                <a href="about.html" class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-[#172B4D] hover:text-[#B69A62] transition-colors">
+                  Read About Me &rarr;
+                </a>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-8 bg-white border border-[#172B4D]/10 rounded-sm flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">Workplace Journey</span>
+                <h3 class="font-display text-xl font-bold text-[#172B4D] mb-2">
+                  Professional Experience
+                </h3>
+                <p class="text-sm text-[#172B4D]/75 mb-6">
+                  Explore my ongoing internship at Octatribe, working on WACRM, ERPClaw, and SeldonFrame.
+                </p>
+              </div>
+              <div>
+                <a href="experience.html" class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-[#172B4D] hover:text-[#B69A62] transition-colors">
+                  View Experience &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- PROJECT MODAL VIEWER -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-[#172B4D]/80 backdrop-blur-sm hidden flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true">
+      <div class="bg-white border border-[#B69A62]/40 rounded-sm w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+        <div class="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-[#172B4D]/10 px-6 py-4 flex items-center justify-between z-10">
+          <div>
+            <span id="modal-category" class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block"></span>
+            <h3 id="modal-title" class="font-display text-lg sm:text-xl font-bold text-[#172B4D]"></h3>
+          </div>
+          <button type="button" class="close-project-modal p-2 rounded-xs text-[#172B4D] hover:bg-[#172B4D]/5 transition-colors focus:outline-none" aria-label="Close modal">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="p-6 space-y-6">
+          <div class="aspect-video bg-[#FAF7F0] border border-[#172B4D]/10 rounded-xs overflow-hidden">
+            <img id="modal-img" src="" alt="" class="w-full h-full object-cover" />
+          </div>
+
+          <div>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-[#172B4D]/60 mb-2">Project Overview</h4>
+            <p id="modal-description" class="text-sm text-[#172B4D]/80 leading-relaxed"></p>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-[#172B4D]/60 mb-2">Key Contributions</h4>
+            <p id="modal-contributions" class="text-sm text-[#172B4D]/80 leading-relaxed bg-[#FAF7F0] p-4 border border-[#172B4D]/10 rounded-sm"></p>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-[#172B4D]/60 mb-2">Technologies Used</h4>
+            <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <div class="border-t border-[#172B4D]/10 px-6 py-4 bg-[#FAF7F0] flex justify-end">
+          <button type="button" class="close-project-modal px-5 py-2 text-xs font-semibold uppercase tracking-wider text-[#172B4D] bg-white border border-[#172B4D]/30 hover:border-[#B69A62] transition-colors rounded-sm">
+            Close Window
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#172B4D] text-[#F5F1E8] pt-12 pb-8 border-t border-[#B69A62]/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-[#F5F1E8]/10">
+          <div class="md:col-span-5">
+            <a href="index.html" class="font-display text-xl font-bold tracking-tight text-white block mb-2">
+              SANA HASAN<span class="text-[#B69A62]">.</span>
+            </a>
+            <p class="text-sm text-[#F5F1E8]/75 leading-relaxed max-w-sm mb-4">
+              Aspiring Full-Stack Developer &amp; Information Management undergraduate at Birgunj Public College, affiliated with Tribhuvan University.
+            </p>
+            <div class="text-xs text-[#B69A62] font-mono">Birgunj, Nepal · Class of 2027</div>
+          </div>
+
+          <div class="md:col-span-4">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Navigation</p>
+            <ul class="grid grid-cols-2 gap-2 text-sm text-[#F5F1E8]/80">
+              <li><a href="index.html" class="hover:text-[#B69A62] transition-colors">Home</a></li>
+              <li><a href="about.html" class="hover:text-[#B69A62] transition-colors">About</a></li>
+              <li><a href="skills.html" class="hover:text-[#B69A62] transition-colors">Skills</a></li>
+              <li><a href="projects.html" class="hover:text-[#B69A62] transition-colors font-semibold text-white">Projects</a></li>
+              <li><a href="experience.html" class="hover:text-[#B69A62] transition-colors">Experience</a></li>
+              <li><a href="certifications.html" class="hover:text-[#B69A62] transition-colors">Certifications</a></li>
+              <li><a href="contact.html" class="hover:text-[#B69A62] transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Contact</p>
+            <div class="space-y-2 text-sm text-[#F5F1E8]/80">
+              <div><a href="mailto:hasansana998@gmail.com" class="hover:text-[#B69A62] transition-colors">hasansana998@gmail.com</a></div>
+              <div><a href="https://github.com/sanah-debug" target="_blank" rel="noopener noreferrer" class="hover:text-[#B69A62] transition-colors">github.com/sanah-debug</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#F5F1E8]/60 gap-4">
+          <p>&copy; 2026 Sana Hasan. All rights reserved.</p>
+          <a href="index.html" class="font-mono text-[#B69A62] hover:underline">&larr; Return to Home</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

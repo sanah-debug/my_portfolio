@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sana Hasan | Aspiring Full-Stack Developer &amp; Information Management Student</title>
+    <meta name="description" content="Official portfolio of Sana Hasan, Aspiring Full-Stack Developer and Information Management student at Birgunj Public College, affiliated with Tribhuvan University." />
+    
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sana Hasan | Aspiring Full-Stack Developer" />
+    <meta property="og:description" content="Explore projects, skills, internship experience, and academic journey of Sana Hasan." />
+    <meta property="og:image" content="/src/assets/images/sana_hasan_editorial_1793599899261.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sana Hasan | Aspiring Full-Stack Developer" />
+    <meta name="twitter:description" content="Explore projects, skills, internship experience, and academic journey of Sana Hasan." />
+    <meta name="twitter:image" content="/src/assets/images/sana_hasan_editorial_1793599899261.jpg" />
+
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sana Hasan",
+      "jobTitle": "Junior Developer Intern & Aspiring Full-Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Octatribe"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Birgunj Public College, Tribhuvan University"
+      },
+      "url": "https://github.com/sanah-debug",
+      "email": "hasansana998@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Birgunj",
+        "addressCountry": "Nepal"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-[#F5F1E8] text-[#172B4D] antialiased selection:bg-[#B69A62] selection:text-white flex flex-col min-h-screen">
+    
+    <!-- TOP NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-[#F5F1E8]/95 backdrop-blur-md border-b border-[#172B4D]/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-8">
+          
+          <!-- Zone 1: Single text element wordmark -->
+          <a href="index.html" class="flex items-baseline gap-2 group whitespace-nowrap shrink-0">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-[#172B4D] group-hover:text-[#B69A62] transition-colors">
+              SANA HASAN
+            </span>
+            <span class="text-[#B69A62] font-serif text-lg leading-none">.</span>
+          </a>
+
+          <!-- Zone 2: Navigation Links (Desktop) -->
+          <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[#172B4D]/80">
+            <a href="index.html" class="text-[#172B4D] font-semibold border-b-2 border-[#B69A62] pb-0.5 whitespace-nowrap transition-colors">Home</a>
+            <a href="about.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">About</a>
+            <a href="skills.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Skills</a>
+            <a href="projects.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Projects</a>
+            <a href="experience.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Experience</a>
+            <a href="certifications.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Certifications</a>
+            <a href="contact.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Contact</a>
+          </nav>
+
+          <!-- Zone 3: Primary Action & Mobile Hamburger -->
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="contact.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] border border-[#172B4D] transition-colors rounded-sm shadow-xs">
+              Get In Touch
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-sm text-[#172B4D] hover:bg-[#172B4D]/5 transition-colors focus:outline-none">
+              <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#F5F1E8] border-b border-[#172B4D]/10 px-4 pt-3 pb-6 transition-all duration-200">
+        <div class="flex flex-col space-y-3 text-base font-medium text-[#172B4D]">
+          <a href="index.html" class="py-2.5 px-3 rounded-sm bg-[#172B4D]/5 text-[#172B4D] font-semibold flex items-center justify-between">
+            <span>Home</span>
+            <span class="text-xs text-[#B69A62]">Current</span>
+          </a>
+          <a href="about.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">About</a>
+          <a href="skills.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Skills</a>
+          <a href="projects.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Projects</a>
+          <a href="experience.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Experience</a>
+          <a href="certifications.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Certifications</a>
+          <a href="contact.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Contact</a>
+          <div class="pt-2">
+            <a href="contact.html" class="w-full inline-flex items-center justify-center px-4 py-3 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm text-center">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+      
+      <!-- HERO SECTION -->
+      <section class="relative pt-12 pb-16 sm:pt-20 sm:pb-24 overflow-hidden border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            <!-- Hero Left Column: Editorial Typography -->
+            <div class="lg:col-span-7 flex flex-col items-start">
+              
+              <!-- Clean unboxed kicker -->
+              <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-4">
+                <span>Birgunj, Nepal</span>
+                <span aria-hidden="true">·</span>
+                <span>Tribhuvan University Affiliated</span>
+                <span aria-hidden="true">·</span>
+                <span>Class of 2027</span>
+              </div>
+
+              <!-- Main Headline -->
+              <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#172B4D] tracking-tight leading-[1.15] text-balance mb-6">
+                Aspiring Full-Stack Developer.
+              </h1>
+
+              <!-- Introduction Prose -->
+              <p class="text-base sm:text-lg text-[#172B4D]/80 leading-relaxed max-w-2xl mb-8">
+                I am Sana Hasan, an Information Management undergraduate at Birgunj Public College and currently a Junior Developer Intern at Octatribe. I build practical, reliable software and explore modern web engineering, mobile development, and applied artificial intelligence.
+              </p>
+
+              <!-- Two prominent CTA buttons -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
+                <a href="projects.html" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] border border-[#172B4D] transition-colors rounded-sm shadow-xs text-center">
+                  Explore My Work
+                  <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+                <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-[#172B4D] bg-transparent hover:bg-[#172B4D]/5 border border-[#172B4D]/40 transition-colors rounded-sm text-center">
+                  Get In Touch
+                </a>
+              </div>
+
+              <!-- Active status indicator (clean unboxed text) -->
+              <div class="flex flex-wrap items-center gap-y-2 gap-x-3 text-xs sm:text-sm text-[#172B4D]/75 pt-4 border-t border-[#172B4D]/10 w-full">
+                <span class="font-semibold text-[#172B4D]">Current Role</span>
+                <span aria-hidden="true" class="text-[#B69A62]">·</span>
+                <span>Junior Developer Intern at Octatribe</span>
+                <span aria-hidden="true" class="text-[#B69A62]">·</span>
+                <span class="text-[#B69A62]">Contributing to WACRM</span>
+              </div>
+            </div>
+
+            <!-- Hero Right Column: Editorial Visual Element -->
+            <div class="lg:col-span-5 relative flex justify-center">
+              <div class="relative w-full max-w-md sm:max-w-lg aspect-square">
+                <!-- Subtle gold accent frame -->
+                <div class="absolute -inset-3 rounded-sm border border-[#B69A62]/30 pointer-events-none -rotate-1 hidden sm:block"></div>
+                <div class="absolute inset-0 bg-[#FAF7F0] border border-[#172B4D]/10 overflow-hidden rounded-sm shadow-sm">
+                  <img 
+                    src="/src/assets/images/sana_hasan_editorial_1793599899261.jpg" 
+                    alt="Sana Hasan portrait" 
+                    class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-102"
+                    referrerpolicy="no-referrer"
+                  />
+                  <!-- Subtle corner insignia -->
+                  <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#172B4D]/90 via-[#172B4D]/40 to-transparent p-5 text-white">
+                    <p class="font-display text-base font-semibold tracking-wide">Sana Hasan</p>
+                    <p class="text-xs text-[#F5F1E8]/85 font-mono">BIM Candidate &amp; Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFESSIONAL INTERESTS STRIP -->
+      <section class="py-12 sm:py-16 bg-[#FAF7F0] border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mb-10">
+            <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-2">
+              <span>Core Areas</span>
+              <span aria-hidden="true">·</span>
+              <span>Focus Domains</span>
+            </div>
+            <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D] tracking-tight">
+              Fields of Curiosity &amp; Practice
+            </h2>
+            <p class="mt-2 text-sm sm:text-base text-[#172B4D]/70">
+              My learning and engineering work spans full-stack application development, modern mobile ecosystems, and applied intelligence systems.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Item 1 -->
+            <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62]/60 transition-colors">
+              <div class="text-[#B69A62] text-xs font-mono mb-2">01. ARCHITECTURE</div>
+              <h3 class="font-display text-lg font-bold text-[#172B4D] mb-2">Full-Stack Development</h3>
+              <p class="text-sm text-[#172B4D]/75 leading-relaxed">
+                Building responsive frontends and structured web applications using JavaScript, Python, PHP, and modern utility-first interfaces.
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62]/60 transition-colors">
+              <div class="text-[#B69A62] text-xs font-mono mb-2">02. ECOSYSTEM</div>
+              <h3 class="font-display text-lg font-bold text-[#172B4D] mb-2">Mobile Application Dev</h3>
+              <p class="text-sm text-[#172B4D]/75 leading-relaxed">
+                Developing cross-platform mobile solutions with React Native, focusing on native gestures, clean state flow, and Figma-grounded UI.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62]/60 transition-colors">
+              <div class="text-[#B69A62] text-xs font-mono mb-2">03. INTELLIGENCE</div>
+              <h3 class="font-display text-lg font-bold text-[#172B4D] mb-2">Machine Learning &amp; AI</h3>
+              <p class="text-sm text-[#172B4D]/75 leading-relaxed">
+                Studying fundamentals of ML, Deep Learning, Natural Language Processing, Computer Vision, and hands-on Generative AI applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS PREVIEW -->
+      <section class="py-14 sm:py-20 border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-2">
+                <span>Selected Works</span>
+                <span aria-hidden="true">·</span>
+                <span>Practical Implementations</span>
+              </div>
+              <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#172B4D] tracking-tight">
+                Featured Projects
+              </h2>
+            </div>
+            <a href="projects.html" class="inline-flex items-center text-sm font-semibold text-[#172B4D] hover:text-[#B69A62] transition-colors group">
+              <span>View all projects</span>
+              <svg class="ml-1.5 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Project 1: BookAHand -->
+            <article class="bg-white border border-[#172B4D]/10 rounded-sm overflow-hidden flex flex-col group hover:border-[#B69A62] transition-colors">
+              <div class="relative aspect-video sm:aspect-16/10 overflow-hidden bg-[#FAF7F0] border-b border-[#172B4D]/10">
+                <img 
+                  src="/src/assets/images/project_bookahand_mockup_1793599900687.jpg" 
+                  alt="BookAHand mobile app mockup" 
+                  class="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute top-4 right-4 bg-[#172B4D] text-white text-xs font-mono uppercase tracking-wider px-2.5 py-1 rounded-xs">
+                  In Progress
+                </div>
+              </div>
+              <div class="p-6 sm:p-8 flex flex-col flex-grow justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs text-[#172B4D]/60 mb-2 font-mono">
+                    <span>Mobile Marketplace</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Home Services</span>
+                  </div>
+                  <h3 class="font-display text-xl sm:text-2xl font-bold text-[#172B4D] mb-3">
+                    BookAHand
+                  </h3>
+                  <p class="text-sm sm:text-base text-[#172B4D]/75 leading-relaxed mb-6">
+                    A mobile marketplace connecting households with trusted, independent home-service professionals such as plumbers, cleaners, and electricians.
+                  </p>
+                  
+                  <!-- Contributions highlight -->
+                  <div class="p-4 bg-[#FAF7F0] border border-[#172B4D]/5 rounded-sm mb-6 text-xs sm:text-sm text-[#172B4D]/80">
+                    <strong class="font-semibold text-[#172B4D]">My Contributions:</strong> UI/UX design in Figma, frontend client built with React Native and Tailwind CSS, and integrated Google Authentication.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex flex-wrap gap-2 text-xs font-mono text-[#172B4D]/70 pt-4 border-t border-[#172B4D]/10">
+                    <span>React Native</span>
+                    <span>·</span>
+                    <span>Tailwind CSS</span>
+                    <span>·</span>
+                    <span>Figma</span>
+                    <span>·</span>
+                    <span>Google Auth</span>
+                  </div>
+                  <div class="mt-6 flex items-center gap-4">
+                    <a href="projects.html" class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-[#172B4D] hover:text-[#B69A62] transition-colors">
+                      Project Details &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Redify -->
+            <article class="bg-white border border-[#172B4D]/10 rounded-sm overflow-hidden flex flex-col group hover:border-[#B69A62] transition-colors">
+              <div class="relative aspect-video sm:aspect-16/10 overflow-hidden bg-[#FAF7F0] border-b border-[#172B4D]/10">
+                <img 
+                  src="/src/assets/images/project_redify_mockup_1793599899533.jpg" 
+                  alt="Redify online bookstore showcase" 
+                  class="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute top-4 right-4 bg-[#FAF7F0] border border-[#172B4D]/20 text-[#172B4D] text-xs font-mono uppercase tracking-wider px-2.5 py-1 rounded-xs">
+                  Completed
+                </div>
+              </div>
+              <div class="p-6 sm:p-8 flex flex-col flex-grow justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs text-[#172B4D]/60 mb-2 font-mono">
+                    <span>E-Commerce Platform</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Web Publishing</span>
+                  </div>
+                  <h3 class="font-display text-xl sm:text-2xl font-bold text-[#172B4D] mb-3">
+                    Redify
+                  </h3>
+                  <p class="text-sm sm:text-base text-[#172B4D]/75 leading-relaxed mb-6">
+                    A dedicated online bookstore e-commerce website designed to facilitate literary discovery, book cataloging, reader browsing, and seamless purchasing flows.
+                  </p>
+                  
+                  <div class="p-4 bg-[#FAF7F0] border border-[#172B4D]/5 rounded-sm mb-6 text-xs sm:text-sm text-[#172B4D]/80">
+                    <strong class="font-semibold text-[#172B4D]">Implementation:</strong> Full store development, catalog structuring, responsive storefront layouts, and commerce configurations using WordPress.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex flex-wrap gap-2 text-xs font-mono text-[#172B4D]/70 pt-4 border-t border-[#172B4D]/10">
+                    <span>WordPress</span>
+                    <span>·</span>
+                    <span>E-Commerce</span>
+                    <span>·</span>
+                    <span>Catalog Design</span>
+                    <span>·</span>
+                    <span>Web Layouts</span>
+                  </div>
+                  <div class="mt-6 flex items-center gap-4">
+                    <a href="projects.html" class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-[#172B4D] hover:text-[#B69A62] transition-colors">
+                      Project Details &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS OVERVIEW TEASER -->
+      <section class="py-14 sm:py-20 bg-[#FAF7F0] border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mb-12">
+            <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-2">
+              <span>Technical Repertoire</span>
+              <span aria-hidden="true">·</span>
+              <span>Categorized Overview</span>
+            </div>
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#172B4D] tracking-tight">
+              Languages, Frameworks &amp; Tooling
+            </h2>
+            <p class="mt-2 text-sm sm:text-base text-[#172B4D]/70">
+              A balanced foundation covering full-stack fundamentals, modern frontend workflows, and foundational machine learning techniques.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mb-10">
+            <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+              <span class="text-xs font-mono text-[#B69A62] block mb-2">LANGUAGES</span>
+              <ul class="text-sm font-medium text-[#172B4D] space-y-1.5">
+                <li>Python</li>
+                <li>Java · C</li>
+                <li>JavaScript</li>
+                <li>PHP · SQL</li>
+              </ul>
+            </div>
+
+            <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+              <span class="text-xs font-mono text-[#B69A62] block mb-2">FRAMEWORKS</span>
+              <ul class="text-sm font-medium text-[#172B4D] space-y-1.5">
+                <li>React</li>
+                <li>React Native</li>
+                <li>Tailwind CSS</li>
+                <li>HTML5 &amp; CSS3</li>
+              </ul>
+            </div>
+
+            <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+              <span class="text-xs font-mono text-[#B69A62] block mb-2">PLATFORMS</span>
+              <ul class="text-sm font-medium text-[#172B4D] space-y-1.5">
+                <li>Git &amp; GitHub</li>
+                <li>WordPress</li>
+                <li>Figma</li>
+                <li>Google Auth</li>
+              </ul>
+            </div>
+
+            <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+              <span class="text-xs font-mono text-[#B69A62] block mb-2">AI &amp; ML</span>
+              <ul class="text-sm font-medium text-[#172B4D] space-y-1.5">
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>NLP (Basics)</li>
+                <li>Generative AI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <a href="skills.html" class="inline-flex items-center justify-center px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[#172B4D] bg-white border border-[#172B4D]/30 hover:border-[#B69A62] hover:text-[#B69A62] transition-colors rounded-sm shadow-2xs">
+              Explore Complete Technical Profile &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTEXTUAL BOTTOM CALLOUT -->
+      <section class="py-14 sm:py-20 text-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">
+            <span>Collaborations &amp; Inquiries</span>
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-[#172B4D] tracking-tight mb-4 text-balance">
+            Interested in working together or discussing an opportunity?
+          </h2>
+          <p class="text-base text-[#172B4D]/75 max-w-xl mx-auto mb-8">
+            I am always open to exploring new software projects, internship opportunities, and collaborative technology initiatives.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm shadow-xs">
+              Send a Message
+            </a>
+            <a href="about.html" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 text-xs font-semibold uppercase tracking-wider text-[#172B4D] bg-transparent hover:bg-[#172B4D]/5 border border-[#172B4D]/30 transition-colors rounded-sm">
+              Read My Background
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#172B4D] text-[#F5F1E8] pt-12 pb-8 border-t border-[#B69A62]/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-[#F5F1E8]/10">
+          
+          <!-- Column 1: Brand & Info -->
+          <div class="md:col-span-5">
+            <a href="index.html" class="font-display text-xl font-bold tracking-tight text-white block mb-2">
+              SANA HASAN<span class="text-[#B69A62]">.</span>
+            </a>
+            <p class="text-sm text-[#F5F1E8]/75 leading-relaxed max-w-sm mb-4">
+              Aspiring Full-Stack Developer &amp; Information Management undergraduate at Birgunj Public College, affiliated with Tribhuvan University.
+            </p>
+            <div class="text-xs text-[#B69A62] font-mono">
+              Birgunj, Nepal · Expected Graduation 2027
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation -->
+          <div class="md:col-span-4">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Navigation</p>
+            <ul class="grid grid-cols-2 gap-2 text-sm text-[#F5F1E8]/80">
+              <li><a href="index.html" class="hover:text-[#B69A62] transition-colors">Home</a></li>
+              <li><a href="about.html" class="hover:text-[#B69A62] transition-colors">About</a></li>
+              <li><a href="skills.html" class="hover:text-[#B69A62] transition-colors">Skills</a></li>
+              <li><a href="projects.html" class="hover:text-[#B69A62] transition-colors">Projects</a></li>
+              <li><a href="experience.html" class="hover:text-[#B69A62] transition-colors">Experience</a></li>
+              <li><a href="certifications.html" class="hover:text-[#B69A62] transition-colors">Certifications</a></li>
+              <li><a href="contact.html" class="hover:text-[#B69A62] transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact & Direct Channels -->
+          <div class="md:col-span-3">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Direct Channels</p>
+            <div class="space-y-2 text-sm text-[#F5F1E8]/80">
+              <div>
+                <a href="mailto:hasansana998@gmail.com" class="hover:text-[#B69A62] transition-colors block">
+                  hasansana998@gmail.com
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/sanah-debug" target="_blank" rel="noopener noreferrer" class="hover:text-[#B69A62] transition-colors inline-flex items-center gap-1.5">
+                  <span>github.com/sanah-debug</span>
+                  <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#F5F1E8]/60 gap-4">
+          <p>&copy; 2026 Sana Hasan. All rights reserved.</p>
+          <p class="font-mono text-[#B69A62]">Crafted with HTML5 &amp; Tailwind CSS</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

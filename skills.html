@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills &amp; Capabilities | Sana Hasan - Technical Stack</title>
+    <meta name="description" content="Categorized technical competencies of Sana Hasan: programming languages, modern frameworks, developer tools, and machine learning fundamentals." />
+    
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Technical Skills | Sana Hasan" />
+    <meta property="og:description" content="Explore languages, frameworks, developer tools, and AI/ML competencies of Sana Hasan." />
+    <meta property="og:image" content="/src/assets/images/sana_hasan_editorial_1793599899261.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#F5F1E8] text-[#172B4D] antialiased selection:bg-[#B69A62] selection:text-white flex flex-col min-h-screen">
+    
+    <!-- TOP NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-[#F5F1E8]/95 backdrop-blur-md border-b border-[#172B4D]/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-8">
+          
+          <a href="index.html" class="flex items-baseline gap-2 group whitespace-nowrap shrink-0">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-[#172B4D] group-hover:text-[#B69A62] transition-colors">
+              SANA HASAN
+            </span>
+            <span class="text-[#B69A62] font-serif text-lg leading-none">.</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[#172B4D]/80">
+            <a href="index.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Home</a>
+            <a href="about.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">About</a>
+            <a href="skills.html" class="text-[#172B4D] font-semibold border-b-2 border-[#B69A62] pb-0.5 whitespace-nowrap transition-colors">Skills</a>
+            <a href="projects.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Projects</a>
+            <a href="experience.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Experience</a>
+            <a href="certifications.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Certifications</a>
+            <a href="contact.html" class="hover:text-[#B69A62] whitespace-nowrap transition-colors">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="contact.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] border border-[#172B4D] transition-colors rounded-sm shadow-xs">
+              Get In Touch
+            </a>
+            
+            <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-sm text-[#172B4D] hover:bg-[#172B4D]/5 transition-colors focus:outline-none">
+              <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#F5F1E8] border-b border-[#172B4D]/10 px-4 pt-3 pb-6 transition-all duration-200">
+        <div class="flex flex-col space-y-3 text-base font-medium text-[#172B4D]">
+          <a href="index.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Home</a>
+          <a href="about.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">About</a>
+          <a href="skills.html" class="py-2.5 px-3 rounded-sm bg-[#172B4D]/5 text-[#172B4D] font-semibold flex items-center justify-between">
+            <span>Skills</span>
+            <span class="text-xs text-[#B69A62]">Current</span>
+          </a>
+          <a href="projects.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Projects</a>
+          <a href="experience.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Experience</a>
+          <a href="certifications.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Certifications</a>
+          <a href="contact.html" class="py-2.5 px-3 rounded-sm hover:bg-[#172B4D]/5 transition-colors">Contact</a>
+          <div class="pt-2">
+            <a href="contact.html" class="w-full inline-flex items-center justify-center px-4 py-3 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm text-center">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+      
+      <!-- PAGE HEADER -->
+      <section class="py-12 sm:py-16 border-b border-[#172B4D]/10 bg-[#FAF7F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">
+              <span>Technical Inventory</span>
+              <span aria-hidden="true">·</span>
+              <span>Categorized Competencies</span>
+            </div>
+            <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-[#172B4D] tracking-tight">
+              Skills &amp; Technologies
+            </h1>
+            <p class="mt-4 text-base sm:text-lg text-[#172B4D]/80 leading-relaxed">
+              A comprehensive view of programming languages, frameworks, software development tools, and artificial intelligence fundamentals drawn directly from verified projects and academic training.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS CATEGORIES GRID -->
+      <section class="py-14 sm:py-20 border-b border-[#172B4D]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="border-b border-[#172B4D]/10 pb-12">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-8 gap-2">
+              <div>
+                <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">01. Foundational Core</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D]">
+                  Programming Languages
+                </h2>
+              </div>
+              <p class="text-xs sm:text-sm text-[#172B4D]/60 font-mono">
+                8 Languages · Scripting, Object-Oriented &amp; Query
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              
+              <!-- Python -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">Python</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Backend / AI</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Utilized for backend logic, algorithmic problem solving, scripting, and machine learning prototypes.
+                </p>
+              </div>
+
+              <!-- Java -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">Java</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">OOP</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Core object-oriented design patterns, enterprise structure, data structures, and university coursework.
+                </p>
+              </div>
+
+              <!-- C -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">C</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Systems</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Fundamental systems concepts, low-level memory awareness, pointers, and foundational computer science.
+                </p>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">JavaScript</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Web / Mobile</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Modern ES6+, DOM manipulation, asynchronous flows, and core language for React and React Native.
+                </p>
+              </div>
+
+              <!-- PHP -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">PHP</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Server-Side</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Server-side scripting, form processing, database connectivity, and WordPress theme integrations.
+                </p>
+              </div>
+
+              <!-- SQL -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">SQL</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Databases</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Relational database schema design, queries, table joins, data integrity, and normalization principles.
+                </p>
+              </div>
+
+              <!-- HTML -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">HTML5</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Markup</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Semantic document structures, modern accessible markup elements (ARIA), and SEO best practices.
+                </p>
+              </div>
+
+              <!-- CSS -->
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">CSS3</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Styling</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Modern flexbox and grid layouts, media queries, CSS variables, typography styling, and responsive math.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Frameworks & Libraries -->
+          <div class="border-b border-[#172B4D]/10 pb-12">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-8 gap-2">
+              <div>
+                <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">02. Modern UI Frameworks</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D]">
+                  Frameworks &amp; Libraries
+                </h2>
+              </div>
+              <p class="text-xs sm:text-sm text-[#172B4D]/60 font-mono">
+                Component Architecture &amp; Responsive Toolkits
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              
+              <!-- React -->
+              <div class="p-6 sm:p-7 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">React</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Web Library</span>
+                </div>
+                <p class="text-sm text-[#172B4D]/75 leading-relaxed mb-4">
+                  Declarative UI building, functional components, state hooks (`useState`, `useEffect`), and modular design systems.
+                </p>
+                <div class="pt-3 border-t border-[#172B4D]/10 text-xs text-[#172B4D]/60 font-mono">
+                  Applied in Web Applications &amp; Pre-Bootcamp
+                </div>
+              </div>
+
+              <!-- React Native -->
+              <div class="p-6 sm:p-7 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">React Native</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Mobile Ecosystem</span>
+                </div>
+                <p class="text-sm text-[#172B4D]/75 leading-relaxed mb-4">
+                  Cross-platform mobile application development targeting iOS and Android with shared JavaScript/TypeScript logic.
+                </p>
+                <div class="pt-3 border-t border-[#172B4D]/10 text-xs text-[#172B4D]/60 font-mono">
+                  Applied in BookAHand Mobile App
+                </div>
+              </div>
+
+              <!-- Tailwind CSS -->
+              <div class="p-6 sm:p-7 bg-white border border-[#172B4D]/10 rounded-sm hover:border-[#B69A62] transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-display text-xl font-bold text-[#172B4D]">Tailwind CSS</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Utility-First</span>
+                </div>
+                <p class="text-sm text-[#172B4D]/75 leading-relaxed mb-4">
+                  Rapid, maintainable utility-first styling, consistent design token management, and mobile-first responsive breakpoints.
+                </p>
+                <div class="pt-3 border-t border-[#172B4D]/10 text-xs text-[#172B4D]/60 font-mono">
+                  Applied in Portfolio &amp; BookAHand
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Platforms -->
+          <div class="border-b border-[#172B4D]/10 pb-12">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-8 gap-2">
+              <div>
+                <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">03. Workflow &amp; Infrastructure</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D]">
+                  Tools &amp; Platforms
+                </h2>
+              </div>
+              <p class="text-xs sm:text-sm text-[#172B4D]/60 font-mono">
+                Version Control, UI Design &amp; Authentication
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              
+              <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+                <span class="text-xs font-mono text-[#B69A62] block mb-1">VCS</span>
+                <h3 class="font-display text-lg font-bold text-[#172B4D]">Git &amp; GitHub</h3>
+                <p class="text-xs text-[#172B4D]/70 mt-1">Branching, commits, pull requests, collaboration workflows.</p>
+              </div>
+
+              <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+                <span class="text-xs font-mono text-[#B69A62] block mb-1">CMS</span>
+                <h3 class="font-display text-lg font-bold text-[#172B4D]">WordPress</h3>
+                <p class="text-xs text-[#172B4D]/70 mt-1">CMS setup, WooCommerce store configurations, theme layouts.</p>
+              </div>
+
+              <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+                <span class="text-xs font-mono text-[#B69A62] block mb-1">DESIGN</span>
+                <h3 class="font-display text-lg font-bold text-[#172B4D]">Figma</h3>
+                <p class="text-xs text-[#172B4D]/70 mt-1">Wireframing, UI component design, mobile prototypes.</p>
+              </div>
+
+              <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+                <span class="text-xs font-mono text-[#B69A62] block mb-1">IDENTITY</span>
+                <h3 class="font-display text-lg font-bold text-[#172B4D]">Google Auth</h3>
+                <p class="text-xs text-[#172B4D]/70 mt-1">OAuth sign-in integration, secure token handling.</p>
+              </div>
+
+              <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+                <span class="text-xs font-mono text-[#B69A62] block mb-1">CREATIVE</span>
+                <h3 class="font-display text-lg font-bold text-[#172B4D]">Canva</h3>
+                <p class="text-xs text-[#172B4D]/70 mt-1">Visual assets, presentations, layout collaterals.</p>
+              </div>
+
+              <div class="p-5 bg-white border border-[#172B4D]/10 rounded-sm">
+                <span class="text-xs font-mono text-[#B69A62] block mb-1">SUITE</span>
+                <h3 class="font-display text-lg font-bold text-[#172B4D]">Adobe</h3>
+                <p class="text-xs text-[#172B4D]/70 mt-1">Design tools, asset refinement, visual curation.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 4: Machine Learning & AI -->
+          <div>
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-8 gap-2">
+              <div>
+                <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">04. Emerging Intelligence</span>
+                <h2 class="font-display text-2xl sm:text-3xl font-bold text-[#172B4D]">
+                  Machine Learning &amp; AI
+                </h2>
+              </div>
+              <p class="text-xs sm:text-sm text-[#172B4D]/60 font-mono">
+                Theoretical Foundations &amp; Hands-On Generative AI
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-display text-lg font-bold text-[#172B4D]">Machine Learning (Basics)</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Algorithms</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Supervised and unsupervised learning principles, regression, classification, data preprocessing, and evaluation metrics.
+                </p>
+              </div>
+
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-display text-lg font-bold text-[#172B4D]">Deep Learning (Basics)</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Neural Nets</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Artificial neural network fundamentals, layers, activation functions, loss calculations, and training workflows.
+                </p>
+              </div>
+
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-display text-lg font-bold text-[#172B4D]">Natural Language Processing</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Text Processing</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Basic text representation, tokenization, embeddings, language understanding concepts, and sentiment classification.
+                </p>
+              </div>
+
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-display text-lg font-bold text-[#172B4D]">Computer Vision</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Visual AI</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Image feature extraction, convolutional structures, object recognition basics, and spatial representations.
+                </p>
+              </div>
+
+              <div class="p-6 bg-white border border-[#172B4D]/10 rounded-sm sm:col-span-2">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-display text-lg font-bold text-[#172B4D]">Generative AI</h3>
+                  <span class="text-xs font-mono text-[#B69A62]">Certified Knowledge</span>
+                </div>
+                <p class="text-xs sm:text-sm text-[#172B4D]/70 leading-relaxed">
+                  Google Cloud AI Studio, multimodal prompting, enterprise proposal generation simulation (EAB via Forage), and integration of LLMs into product software.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTEXTUAL NAVIGATION -->
+      <section class="py-12 sm:py-16 bg-[#FAF7F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-6 p-6 sm:p-8 bg-white border border-[#172B4D]/10 rounded-sm">
+            <div>
+              <span class="text-xs font-mono text-[#B69A62] uppercase tracking-wider block mb-1">Next Destination</span>
+              <h3 class="font-display text-xl sm:text-2xl font-bold text-[#172B4D]">
+                See How I Apply These Technologies in Projects
+              </h3>
+              <p class="text-sm text-[#172B4D]/70 mt-1">
+                Explore BookAHand (React Native app) and Redify (WordPress bookstore).
+              </p>
+            </div>
+            <a href="projects.html" class="inline-flex items-center justify-center px-7 py-3.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#172B4D] hover:bg-[#223b63] transition-colors rounded-sm shadow-xs shrink-0">
+              View My Projects &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#172B4D] text-[#F5F1E8] pt-12 pb-8 border-t border-[#B69A62]/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-[#F5F1E8]/10">
+          <div class="md:col-span-5">
+            <a href="index.html" class="font-display text-xl font-bold tracking-tight text-white block mb-2">
+              SANA HASAN<span class="text-[#B69A62]">.</span>
+            </a>
+            <p class="text-sm text-[#F5F1E8]/75 leading-relaxed max-w-sm mb-4">
+              Aspiring Full-Stack Developer &amp; Information Management undergraduate at Birgunj Public College, affiliated with Tribhuvan University.
+            </p>
+            <div class="text-xs text-[#B69A62] font-mono">Birgunj, Nepal · Class of 2027</div>
+          </div>
+
+          <div class="md:col-span-4">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Navigation</p>
+            <ul class="grid grid-cols-2 gap-2 text-sm text-[#F5F1E8]/80">
+              <li><a href="index.html" class="hover:text-[#B69A62] transition-colors">Home</a></li>
+              <li><a href="about.html" class="hover:text-[#B69A62] transition-colors">About</a></li>
+              <li><a href="skills.html" class="hover:text-[#B69A62] transition-colors font-semibold text-white">Skills</a></li>
+              <li><a href="projects.html" class="hover:text-[#B69A62] transition-colors">Projects</a></li>
+              <li><a href="experience.html" class="hover:text-[#B69A62] transition-colors">Experience</a></li>
+              <li><a href="certifications.html" class="hover:text-[#B69A62] transition-colors">Certifications</a></li>
+              <li><a href="contact.html" class="hover:text-[#B69A62] transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3">
+            <p class="text-xs font-mono uppercase tracking-wider text-[#B69A62] mb-3">Contact</p>
+            <div class="space-y-2 text-sm text-[#F5F1E8]/80">
+              <div><a href="mailto:hasansana998@gmail.com" class="hover:text-[#B69A62] transition-colors">hasansana998@gmail.com</a></div>
+              <div><a href="https://github.com/sanah-debug" target="_blank" rel="noopener noreferrer" class="hover:text-[#B69A62] transition-colors">github.com/sanah-debug</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#F5F1E8]/60 gap-4">
+          <p>&copy; 2026 Sana Hasan. All rights reserved.</p>
+          <a href="index.html" class="font-mono text-[#B69A62] hover:underline">&larr; Return to Home</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
